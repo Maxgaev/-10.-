@@ -40,7 +40,6 @@ namespace Задание_10.Классы_и_объекты
             while (true)
             {
                 Console.Clear();
-
                 try
                 {
                     Console.WriteLine("\nвведите ГРАДУСЫ");
@@ -62,6 +61,7 @@ namespace Задание_10.Классы_и_объекты
                     {
                         GetInfo();
 
+
                     }
                 }
                 catch (Exception)
@@ -77,28 +77,27 @@ namespace Задание_10.Классы_и_объекты
 
 
         }
-
         // метод выводит значение угла
         public void GetInfo()
         {
             Console.WriteLine($"\nнашЪ угол равен = {grd + "°"}{ min + "'"}{ sec + "\""}");
             Console.ReadLine();
         }
-
         //метод TogrdDecimal для перевода угла в десятичные
         public void TogrdDecimal()
         {
-            
-            grddecimal = grd + ((double)min / 60) + ((double)sec / 3600);
-            Console.WriteLine("\nУгол в десятичных = {0:F3}", $"{grddecimal}" + "°"); 
-        }
 
+            grddecimal = grd + ((double)min / 60) + ((double)sec / 3600);
+            Console.WriteLine("\nУгол в десятичных = {0:F3}", $"{grddecimal}" + "°");
+            Console.ReadLine();
+        }
         //метод ToRadians для перевода угла в радианы
 
         public void ToRad()
         {
             grdRad = grddecimal * (Math.PI / 180);
             Console.WriteLine("\nУгол в радианах = {0:F3}", $"{grdRad}");
+            Console.ReadLine();
         }
 
         // конструктор для установки начальных значений       

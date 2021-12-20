@@ -12,9 +12,8 @@ namespace Задание_10.Классы_и_объекты
         static void Main(string[] args)
         {
             Corner Ccorner = new Corner();
-            Ccorner.GetInfo();
-            Ccorner.ToRad();
             Ccorner.TogrdDecimal();
+            Ccorner.ToRad();
             Console.ReadKey();
 
         }
